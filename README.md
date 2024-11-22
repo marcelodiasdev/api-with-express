@@ -38,7 +38,7 @@ exemplo da resposta:
 ## 2. GET /livros/:id
 Descrição: Retorna os detalhes de um livro específico com base no id.
 Parâmetros:
-    id: ID do livro a ser retornado.
+   -  id: ID do livro a ser retornado.
 Resposta de Sucesso: 200 OK
 Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
 exemplo da resposta:
