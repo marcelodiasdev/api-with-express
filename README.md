@@ -16,9 +16,9 @@ Endpoints
 
 ## 1. GET /livros
 
-Descrição: Retorna uma lista de todos os livros cadastrados.
-Resposta de Sucesso: 200 OK
-exemplo da resposta:
+ - Descrição: Retorna uma lista de todos os livros cadastrados.
+ - Resposta de Sucesso: 200 OK
+ - exemplo da resposta:
 ```
 [
   {
@@ -39,9 +39,10 @@ exemplo da resposta:
 Descrição: Retorna os detalhes de um livro específico com base no id.
 Parâmetros:
    -  id: ID do livro a ser retornado.
-Resposta de Sucesso: 200 OK
-Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
-exemplo da resposta:
+
+ - Resposta de Sucesso: 200 OK
+ - Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
+ - exemplo da resposta:
 ```
 {
   "id": 1,
@@ -51,8 +52,8 @@ exemplo da resposta:
 ```
 
 ## 3. POST /livros
-Descrição: Adiciona um novo livro ao catálogo.
-Corpo da Requisição:
+ - Descrição: Adiciona um novo livro ao catálogo.
+ - Corpo da Requisição:
 ```
 {
   "nome": "Novo Livro",
@@ -61,18 +62,18 @@ Corpo da Requisição:
 
 ```
 
-Resposta de Sucesso: 201 Created
-Resposta de Erro: 422 (Se o campo nome não for fornecido)
-Exemplo de resposta:
+ - Resposta de Sucesso: 201 Created
+ - Resposta de Erro: 422 (Se o campo nome não for fornecido)
+ - Exemplo de resposta:
 ```
   "Book insert successful"
 ```
 
 4. PATCH /livros/:id
-Descrição: Atualiza as informações de um livro existente com base no id.
-Parâmetros:
+ - Descrição: Atualiza as informações de um livro existente com base no id.
+ - Parâmetros:
     - id: ID do livro a ser atualizado.
-Corpo da Requisição:
+ - Corpo da Requisição:
 
 ```
 {
@@ -82,21 +83,21 @@ Corpo da Requisição:
 
 ```
 
-Resposta de Sucesso: 200 OK
-Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
-Exemplo de resposta:
+ - Resposta de Sucesso: 200 OK
+ - Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
+ - Exemplo de resposta:
 ```
 "Item modified successfully"
 ```
 
 
 5. DELETE /livros/:id
-Descrição: Deleta um livro com base no id.
-Parâmetros:
+ - Descrição: Deleta um livro com base no id.
+ - Parâmetros:
     - id: ID do livro a ser deletado.
-Resposta de Sucesso: 200 OK
-Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
-Exemplo de resposta:
+ - Resposta de Sucesso: 200 OK
+ - Resposta de Erro: 422 Invalid ID (Se o ID não for válido ou não encontrado)
+ - Exemplo de resposta:
 ```
 "Book deleted successfully"
 ```
